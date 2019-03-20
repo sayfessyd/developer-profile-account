@@ -1,0 +1,4 @@
+Name:   profile.png
+License: 	Basic License
+By: 	Free Pikk
+Format: 	Raster

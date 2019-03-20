@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "Gordita";
+  font-weight: 700;
+  src: url("../fonts/hinted-GorditaBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Gordita";
+  font-weight: 500;
+  src: url("../fonts/hinted-GorditaMedium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Gordita";
+  font-weight: 400;
+  src: url("../fonts/hinted-GorditaRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Fakt Pro RVLRY";
+  src: url("../fonts/faktpro.ttf") format("truetype"); }
+
+* {
+  font-family: "Gordita", sans-serif; }
+
+.primary {
+  color: #423F3F; }
+
+.secondary {
+  color: #7E7E7E !important; }
+
+body {
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 95px;
+  background-color: #FFFFFF;
+  z-index: 11; }
+  .navbar .arrow {
+    float: left;
+    margin: 25px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50%;
+    color: #303030;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent; }
+  .navbar .profile {
+    float: right;
+    margin: 20px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent; }
+  .navbar .text {
+    float: right;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #202124;
+    cursor: default; }
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 275px;
+  background-color: rgba(255, 255, 255, 0.95);
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: -webkit-transform .7s;
+  transition: -webkit-transform .7s;
+  transition: transform .7s;
+  transition: transform .7s, -webkit-transform .7s;
+  z-index: 12; }
+  @media screen and (max-width: 1200px) {
+    .sidebar {
+      -webkit-transform: translateX(-275px);
+              transform: translateX(-275px); } }
+  .sidebar .button {
+    display: block;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #DC412E;
+    color: #FFFFFF;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent; }
+  .sidebar .title {
+    display: block;
+    position: relative;
+    top: 75px;
+    left: 35px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #171717;
+    cursor: default; }
+  .sidebar .item-list {
+    display: block;
+    position: relative;
+    top: 115px;
+    border-top: 1px solid #f7f7f7; }
+    .sidebar .item-list .item {
+      display: inherit;
+      height: 60px;
+      line-height: 60px;
+      text-align: left;
+      padding-left: 35px;
+      font-size: 18px;
+      font-weight: 400;
+      color: #423F3F;
+      -webkit-transition: background-color .2s ease-in-out, font-weight 75ms;
+      transition: background-color .2s ease-in-out, font-weight 75ms;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent; }
+      .sidebar .item-list .item:hover {
+        background-color: #fcfcfc; }
+    .sidebar .item-list .var {
+      font-family: "Fakt Pro RVLRY", sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      text-transform: uppercase; }
+    .sidebar .item-list .active {
+      background-color: #fcfcfc; }
+      .sidebar .item-list .active:not(.var) {
+        font-weight: 700; }
+
+.main {
+  z-index: 1; }
+  .main .title {
+    margin-top: 135px;
+    font-size: 44px;
+    font-weight: 500;
+    cursor: default; }
+  .main .second-title {
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: default; }
+  .main hr {
+    position: absolute;
+    top: 339px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border: 1.5px solid #f7f7f7; }
+  .main .form {
+    margin-top: 200px;
+    text-align: left; }
+    .main .form#email-tab {
+      display: none; }
+    @media screen and (min-width: 1800px) {
+      .main .form {
+        padding: 0 100px; } }
+    .main .form .active-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1e1e1e;
+      cursor: default; }
+    .main .form form {
+      margin: 85px 0; }
+      .main .form form .form-group {
+        position: relative; }
+        .main .form form .form-group + .form-group {
+          margin-top: 65px; }
+      .main .form form .form-label {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        font-size: 16px;
+        color: #202020;
+        background-color: #FFFFFF;
+        z-index: 10;
+        -webkit-transition: font-size 150ms ease-out, -webkit-transform 150ms ease-out;
+        transition: font-size 150ms ease-out, -webkit-transform 150ms ease-out;
+        transition: transform 150ms ease-out, font-size 150ms ease-out;
+        transition: transform 150ms ease-out, font-size 150ms ease-out, -webkit-transform 150ms ease-out;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent; }
+      .main .form form .focused .form-label {
+        -webkit-transform: translateY(-275%);
+                transform: translateY(-275%);
+        font-size: 13px; }
+      .main .form form .form-input {
+        position: relative;
+        padding: 12px 0px 20px 0;
+        width: 100%;
+        outline: 0;
+        border: 0;
+        border-bottom: 2px solid #f7f7f7;
+        will-change: border-color;
+        -webkit-transition: border-color .2s ease-in-out;
+        transition: border-color .2s ease-in-out;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent; }
+        .main .form form .form-input[type=text] {
+          line-height: 10px; }
+      .main .form form .form-select:after {
+        content: '>';
+        font: 20px monospace;
+        color: #707070;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+        right: 10px;
+        top: 10px;
+        padding: 0 0 2px;
+        position: absolute;
+        pointer-events: none; }
+      .main .form form .select {
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        background-color: #FFFFFF; }
+        .main .form form .select:focus {
+          border-color: #202020; }
+      .main .form form .select-label {
+        font-size: 13px;
+        font-weight: 500;
+        bottom: 60px; }
+      .main .form form .form-line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        max-width: 100%;
+        border-bottom: 2px solid #202020;
+        -webkit-transition: border-color .2s ease-in-out, width .2s ease-in-out;
+        transition: border-color .2s ease-in-out, width .2s ease-in-out; }
+      .main .form form .form-hidden {
+        position: absolute;
+        display: inline;
+        visibility: hidden;
+        font-size: 16px;
+        padding: 0;
+        margin: 0; }
+
+/*# sourceMappingURL=app.css.map */
