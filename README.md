@@ -1,4 +1,4 @@
-#  Turing’s Front-end Developer Challenge 2
+#  Front-end Developer Challenge
 
 The project is <b>desktop</b> and <b>mobile</b> responsive. It's tested on a <b>Full HD Screen</b> (1920 x 1080 pixels) and on  a <b>smartphone</b> with 1080 x 2160 pixels.
 
